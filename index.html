@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate today</title>
-    <!-- tailwind cdn -->
+    <!-- tailwind and daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
     <script
@@ -62,6 +67,19 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
     />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#FF5959",
+              secondary: "#707070",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="font-[poppins]">
     <!-- ------header section starts here----  -->
@@ -104,5 +122,56 @@
       </div>
     </header>
     <!-- ------header section ends here----  -->
+    <main>
+      <!-- donate section starts here -->
+      <section class="lg:w-2/3 w-11/12 my-24 mx-auto text-center">
+        <h2 class="font-bold text-4xl">Donate Today</h2>
+        <p class="text-lg text-secondary lg:w-3/5 mx-auto mt-5 mb-12">
+          Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+          falli deterruisset. No duo populo animal noluisse, enim
+        </p>
+        <div class="grid grid-cols-5 gap-6 text-center">
+          <div
+            class="py-11 px-6 text-secondary hover:text-primary hover:border-2 hover:border-primary bg-[#FAFAFA] rounded-md font-bold text-3xl"
+          >
+            100tk
+          </div>
+          <div
+            class="py-11 px-6 text-secondary hover:text-primary hover:border-2 hover:border-primary bg-[#FAFAFA] rounded-md font-bold text-3xl"
+          >
+            200tk
+          </div>
+          <div
+            class="py-11 px-6 text-secondary hover:text-primary hover:border-2 hover:border-primary bg-[#FAFAFA] rounded-md font-bold text-3xl"
+          >
+            500tk
+          </div>
+          <div
+            class="py-11 px-6 text-secondary hover:text-primary hover:border-2 hover:border-primary bg-[#FAFAFA] rounded-md font-bold text-3xl"
+          >
+            1000tk
+          </div>
+          <div
+            class="py-11 px-6 text-secondary hover:text-primary hover:border-2 hover:border-primary bg-[#FAFAFA] rounded-md font-bold text-3xl"
+          >
+            5000tk
+          </div>
+        </div>
+        <div class="mt-14 text-center">
+          <input
+            class="w-full border-b-2 border-[#DADADA] text-center focus:outline-none"
+            type="text"
+            placeholder="Other Amount (Taka)"
+          /><br />
+          <button
+            class="btn hover:bg-primary mt-8 rounded-md bg-primary text-white"
+          >
+            Donate Now
+          </button>
+        </div>
+      </section>
+      <!-- donate section ends here -->
+    </main>
+    <footer></footer>
   </body>
 </html>
