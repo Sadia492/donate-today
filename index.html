@@ -83,7 +83,9 @@
   </head>
   <body class="font-[poppins]">
     <!-- ------header section starts here----  -->
-    <header class="w-4/5 mx-auto flex justify-between py-20">
+    <header
+      class="w-4/5 mx-auto flex items-center flex-col lg:flex-row justify-between py-20"
+    >
       <div>
         <h1 class="text-[#121212] font-bold text-6xl">
           Let’s Help <br />Those Who Are <br />More In Need
@@ -103,26 +105,28 @@
           </button>
         </div>
       </div>
-      <div class="w-1/2 relative">
-        <div class="absolute top-24">
-          <div
-            class="absolute left-[58px] top-8 w-[500px] h-[250px] rounded-t-full border-t-[0px] border-l-[0px] border-r-[0px] bg-gradient-to-t from-[#FFD3D3] to-[#FF5959] pt-10 pb-10"
-          >
-            <div
-              class="absolute left-6 top-10 w-[450px] h-[225px] rounded-t-full border-t-[0px] border-l-[0px] border-r-[0px] bg-white"
-            ></div>
-          </div>
-          <img class="w-full" src="images/Ellipse 256.png" alt="" />
+      <div class="relative">
+        <div>
+          <img class="lg:w-3/4 mx-auto" src="images/Donate 1.png" alt="" />
         </div>
-        <img
-          class="z-50 absolute left-32 w-1/2"
-          src="images/Donate 1.png"
-          alt=""
-        />
+        <div class="w-full">
+          <img
+            class="-z-10 w-full absolute top-1/2"
+            src="images/Ellipse 257.png"
+            alt=""
+          />
+        </div>
+        <div class="w-full">
+          <img
+            class="-z-10 w-full absolute top-1/3"
+            src="images/Ellipse 257.png"
+            alt=""
+          />
+        </div>
       </div>
     </header>
     <!-- ------header section ends here----  -->
-    <main>
+    <main class="space-y-24">
       <!-- donate section starts here -->
       <section class="lg:w-2/3 w-11/12 my-24 mx-auto text-center">
         <h2 class="font-bold text-4xl">Donate Today</h2>
@@ -130,7 +134,9 @@
           Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
           falli deterruisset. No duo populo animal noluisse, enim
         </p>
-        <div class="grid grid-cols-5 gap-6 text-center">
+        <div
+          class="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-6 text-center"
+        >
           <div
             class="py-11 px-6 text-secondary hover:text-primary hover:border-2 hover:border-primary bg-[#FAFAFA] rounded-md font-bold text-3xl"
           >
@@ -171,6 +177,43 @@
         </div>
       </section>
       <!-- donate section ends here -->
+      <!-- plan section starts here -->
+      <section class="lg:w-4/5 w-11/12 mx-auto">
+        <h2 class="font-bold text-4xl text-center">Our Donate Plan</h2>
+        <p
+          class="text-center text-lg text-secondary lg:w-3/5 mx-auto mt-5 mb-12"
+        >
+          Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+          falli deterruisset. No duo populo animal noluisse, enim
+        </p>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6 grid-cols-1">
+          <div class="rounded-md space-y-4 bg-[#4F9DA61A] px-6 py-14">
+            <img src="icons/food.png" alt="" />
+            <h4 class="font-semibold text-2xl">Food for a family</h4>
+            <p class="text-secondary">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div class="rounded-md space-y-4 bg-[#FF59591A] px-6 py-14">
+            <img src="icons/shelter.png" alt="" />
+            <h4 class="font-semibold text-2xl">Shelter for a family</h4>
+            <p class="text-secondary">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <div class="rounded-md space-y-4 bg-[#fff4d6] px-6 py-14">
+            <img src="icons/Frame-1.png" alt="" />
+            <h4 class="font-semibold text-2xl">Education for a child</h4>
+            <p class="text-secondary">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- plan section ends here -->
     </main>
     <footer></footer>
   </body>
